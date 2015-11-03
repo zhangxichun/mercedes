@@ -1,0 +1,91 @@
+﻿<ion-view view-title="成绩详细">
+    <ion-content>
+        <div class="list" id="part1" ng-show="viewState.showId=='part1'">
+            <a class="item">
+                <div class="row" style="padding:0px;">
+                    <div class="col col-10"><p>1</p></div>
+                    <div class="col"><p>标准1</p></div>
+                    <div class="col col-10"><p>是</p></div>
+                </div>
+            </a>
+            <a class="item">
+                <div class="row" style="padding:0px;">
+                    <div class="col col-10"><p>2</p></div>
+                    <div class="col"><p>标准2</p></div>
+                    <div class="col col-10"><p>否</p></div>
+                </div>
+            </a>
+            <a class="item">
+                <div class="row" style="padding:0px;">
+                    <div class="col col-10"><p>3</p></div>
+                    <div class="col"><p>标准3</p></div>
+                    <div class="col col-10"><p>否</p></div>
+                </div>
+            </a>
+            <a class="item">
+                <div class="row" style="padding:0px;">
+                    <div class="col col-10"><p>4</p></div>
+                    <div class="col"><p>标准4</p></div>
+                    <div class="col col-10"><p>是</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="list" id="part2" ng-show="viewState.showId=='part2'">
+            <a class="item" href="#/app/score_detail_photo">
+                <div class="row" style="padding:0px;">
+                    <div class="col col-10"><p>1</p></div>
+                    <div class="col"><p>照片1</p></div>
+                    <div class="col col-10"><p>是</p></div>
+                </div>
+            </a>
+            <a class="item" href="#/app/score_detail_photo">
+                <div class="row" style="padding:0px;">
+                    <div class="col col-10"><p>2</p></div>
+                    <div class="col"><p>照片2</p></div>
+                    <div class="col col-10"><p>否</p></div>
+                </div>
+            </a>
+            <a class="item" href="#/app/score_detail_photo">
+                <div class="row" style="padding:0px;">
+                    <div class="col col-10"><p>3</p></div>
+                    <div class="col"><p>照片3</p></div>
+                    <div class="col col-10"><p>是</p></div>
+                </div>
+            </a>
+            <a class="item" href="#/app/score_detail_photo">
+                <div class="row" style="padding:0px;">
+                    <div class="col col-10"><p>4</p></div>
+                    <div class="col"><p>照片4</p></div>
+                    <div class="col col-10"><p>否</p></div>
+                </div>
+            </a>
+        </div>
+        <div class="list" id="part3" ng-show="viewState.showId=='part3'">
+            <a class="item" href="#/app/score_detail_photo">
+                <div class="row" style="padding:0px;">
+                    <div class="col col-10"><p>1</p></div>
+                    <div class="col"><p>失分描述1</p></div>
+                </div>
+            </a>
+            <a class="item" href="#/app/score_detail_photo">
+                <div class="row" style="padding:0px;">
+                    <div class="col col-10"><p>2</p></div>
+                    <div class="col"><p>失分描述2</p></div>
+                </div>
+            </a>
+            <a class="item" href="#/app/score_detail_photo">
+                <div class="row" style="padding:0px;">
+                    <div class="col col-10"><p>3</p></div>
+                    <div class="col"><p>失分描述3</p></div>
+                </div>
+            </a>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer">
+        <div class="button-bar">
+            <a class="button" ng-click="viewState.showId='part1';">检查标准</a>
+            <a class="button" ng-click="viewState.showId='part2';">标准照片</a>
+            <a class="button" ng-click="viewState.showId='part3';">失分描述</a>
+        </div>
+    </div>
+</ion-view>

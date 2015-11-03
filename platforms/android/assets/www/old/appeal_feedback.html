@@ -1,0 +1,54 @@
+﻿<ion-view view-title="反馈">
+    <ion-nav-buttons side="secondary">
+        <button class="button" ng-click="saveFeedback()">
+            保存
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">体系号</span>
+                <p>{{viewState.subjectCode}}</p>
+            </label>
+            <label class="item item-input item-text-wrap">
+                <span class="input-label">检查点</span>
+                <p class="padding-right">{{viewState.subjectContent}}</p>
+            </label>
+            <!--<label class="item item-input">
+                <span class="input-label">申诉理由</span>
+                <p class="item-text-wrap">{{viewState.appealReason}}</p>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">照片</span>
+                <input type="button" class="button button-positive" ng-click="vinPicture();" value="拍照" />
+            </label>
+            <label class="item item-image padding">
+                <img id="imgVIN" style="max-width:300px;" ng-src="{{viewState.vin_img_uri}}" />
+            </label>-->
+        </div>
+        <div class="list card">
+            <div class="item item-image">
+                <img ng-src="{{viewState.appealPhoto}}">
+            </div>
+            <div class="item item-text-wrap">
+                {{viewState.appealReason}}
+            </div>
+        </div>
+        <div class="list">
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    是否同意
+                </div>
+                <select ng-model="viewState.allowAppeal" >
+                    <option value="">选择</option>
+                    <option value="true">同意</option>
+                    <option value="false">不同意</option>
+                </select>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">反馈理由</span>
+                <textarea rows="4" ng-model="viewState.feedbackReason"></textarea>
+            </label>
+        </div>
+</ion-content>
+</ion-view>

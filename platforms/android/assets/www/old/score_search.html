@@ -1,0 +1,23 @@
+﻿<ion-view view-title="得分查询">
+    <ion-nav-buttons side="secondary">
+        <button class="button icon ion-funnel" ng-click="showPopup()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list show-delete="shouldShowDelete"
+                  show-reorder="shouldShowReorder"
+                  can-swipe="listCanSwipe">
+            <ion-item ng-repeat="item in items" ng-style="{'background-color':$odd?'red':'blue'}">
+                <div class="row" style="padding:0px;">
+                    <div class="col"><p>{{item.subjectCode}}</p></div>
+                    <div class="col"><p>{{item.subjectType}}</p></div>
+                    <div class="col"><p>{{item.socre}}</p></div>
+                </div>
+                <p>{{item.subjectContent}}</p>
+                <ion-option-button class="button-positive" ng-click="detail(item)">详细</ion-option-button>
+                <ion-option-button class="button-assertive" ng-click="appeal(item)">申诉</ion-option-button>
+                <ion-delete-button class="ion-minus-circled" ng-click="items.splice($index, 1)"></ion-delete-button>
+                <ion-reorder-button class="ion-navicon" on-reorder="reorderItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

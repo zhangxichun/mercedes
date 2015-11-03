@@ -1,0 +1,13 @@
+﻿<ion-view view-title="待办事项">
+    <ion-content>
+        <div class="list">
+            <a class="item" ng-repeat="item in viewState.todoList" href="#/app/todo_detail">
+                <div class="row" style="padding:0px;">
+                    <div class="col"><p>{{item.departmentName}}</p></div>
+                    <div class="col"><p>{{item.matter}}</p></div>
+                    <div class="col"><p>{{item.status}}</p></div>
+                </div>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

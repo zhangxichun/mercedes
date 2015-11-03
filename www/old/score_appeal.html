@@ -1,0 +1,30 @@
+﻿<ion-view view-title="申诉">
+    <ion-nav-buttons side="secondary">
+        <button class="button" ng-click="saveAppeal()">
+            保存
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">体系号</span>
+                <p>{{viewState.subject.subjectCode}}</p>
+            </label>
+            <label class="item item-input item-text-wrap">
+                <span class="input-label">检查点</span>
+                <p>{{viewState.subject.subjectContent}}</p>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">申诉理由</span>
+                <textarea rows="4" ng-model="viewState.appealReason"></textarea>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">照片</span>
+                <input type="button" class="button button-positive" ng-click="vinPicture();" value="拍照" />
+            </label>
+            <label class="item item-image padding">
+                <img id="imgVIN" style="max-width:300px;" ng-src="{{viewState.vin_img_uri}}" />
+            </label>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,13 @@
+﻿<div class="list list-inset">
+    <div class="list">
+        <label class="item item-input item-select">
+            <div class="input-label">
+                期号
+            </div>
+            <select ng-model="viewState.project" ng-options="item.projectName for item in viewState.projects"></select>
+        </label>
+    </div>
+    <label class="item item-input">
+        <input type="text" placeholder="经销商" ng-model="shopCode" />
+    </label>
+</div>
