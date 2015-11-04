@@ -14,6 +14,9 @@
 .controller('MainCtrl', function ($scope) {
 
 })
+.controller('PhotoViewerCtrl', function ($scope) {
+
+})
 .controller('ScorePreviewCtrl', function ($scope, $rootScope, $state, $ionicPopup, $timeout) {
     $scope.viewState = {};
     $scope.viewState.showId = 'part1';
@@ -76,7 +79,7 @@
                 { text: '取消' },
                 {
                     text: '<b>查询</b>',
-                    type: 'button-positive',
+                    type: 'button-stable',
                     onTap: function (e) {
                         //if (!$scope.data.wifi) {
                         //    //don't allow the user to close unless he enters wifi password
@@ -183,7 +186,7 @@
               { text: '取消' },
               {
                   text: '<b>查询</b>',
-                  type: 'button-positive',
+                  type: 'button-stable',
                   onTap: function (e) {
                       //if (!$scope.data.wifi) {
                       //    //don't allow the user to close unless he enters wifi password

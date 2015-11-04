@@ -45,6 +45,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         })
+        .state('app.photo_viewer', {//主页面
+            url: '/photo_viewer',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/photo_viewer.html',
+                    controller: 'PhotoViewerCtrl'
+                }
+            }
+        })
+
         .state('app.score_preview', {//成绩预览
             url: '/score_preview',
             views: {
@@ -117,11 +127,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         })
-        .state('app.todo_detail_improvedFeedback', {//待办事项详细_改善反馈
-            url: '/todo_detail_improvedFeedback',
+        .state('app.todo_detail_improved', {//待办事项详细_改善
+            url: '/todo_detail_improved',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/todo_detail_improvedFeedback.html',
+                    templateUrl: 'templates/todo_detail_improved.html',
                     controller: 'TodoListCtrl'
                 }
             }

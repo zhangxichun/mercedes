@@ -1,6 +1,6 @@
 ﻿<ion-view view-title="成绩预览">
     <ion-nav-buttons side="secondary">
-        <button class="button icon ion-funnel" ng-click="showPopup()"></button>
+        <button class="button button-stable icon ion-funnel" ng-click="showPopup()"></button>
     </ion-nav-buttons>
     <ion-content>
         <ion-list show-delete="shouldShowDelete"
@@ -12,7 +12,7 @@
                     <div class="col"><p>{{item.subjectContent}}</p></div>
                     <div class="col col-10"><p>{{item.socre}}</p></div>
                 </div>
-                <!--<ion-option-button class="button-positive" ng-click="detail(item)">详细</ion-option-button>-->
+                <!--<ion-option-button class="button-stable" ng-click="detail(item)">详细</ion-option-button>-->
                 <ion-delete-button class="ion-minus-circled" ng-click="items.splice($index, 1)"></ion-delete-button>
                 <ion-reorder-button class="ion-navicon" on-reorder="reorderItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
             </ion-item>
